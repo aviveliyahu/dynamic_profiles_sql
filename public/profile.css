@@ -1,0 +1,165 @@
+/* CSS file of Ex2 by Aviv Yonathan Eliyahu and Matan Asraf */
+
+/* general parts */
+body{
+    background-image: url(/background.jpg);
+    background-attachment: fixed;
+    font-family: 'Bree Serif', serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 3% 10% 3% 10%;
+    background-color: white;
+    box-shadow: 0px 10px 10px 10px rgba(0,0,0,0.2);
+}
+
+.info, .endorsement, .friends{
+    padding: 2% 5% 2% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.endorsement{
+    flex-direction: row-reverse;
+    background-image: url(/clouds.webp);
+    background-repeat: repeat;
+}
+
+
+/* profile part */
+.banner{
+    height: 350px;
+    width: 100%;
+}
+
+#back_img{
+    height: 100%;
+    width:100%;
+    object-fit:cover;
+}
+
+.profile{
+    position: relative;
+}
+
+#profile_img{
+    position: absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 10px white solid;
+    left:-2%;
+    top:70%;
+}
+
+
+/* info part */
+.info{
+    flex-direction: row;
+}
+
+#info_title,#end_title, #friends_title{
+    font-family: 'Rammetto One',Cursive;
+}
+
+#info_title{
+    font-size:3vw;
+    padding-top: 10px;
+    text-shadow: 3px 3px 1px #999999;
+}
+
+#info_title,#end_title, #friends_title, .end_box{
+    text-align: center;
+}
+#info_left ,#info_right, #end_left ,#end_right{
+    width: 49%;
+    max-width: 49%;
+}
+
+#info_right , #end_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info_img, #end_img{
+    max-height: 600px;
+    max-width: 400px;
+    width: 30vw;
+}
+
+#mickey_info{
+    display: flex;
+    flex-direction:column;
+}
+
+.parameter_titles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.parameters, .answers, .seperator{
+    width: 40%;
+}
+
+#info_left{
+    z-index: 0;
+}
+
+
+/* endorsement part */
+#end_title, #friends_title{
+    text-transform: uppercase;
+    font-size: 2.5vw;
+}
+
+.end_box{
+    border-color: #cccaca;
+    border-left-style: solid;
+    border-width: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 0px 0px 15px 0px;
+}
+
+.name{
+    font-style:italic;
+}
+
+#end_left{
+    z-index: 1;
+}
+
+
+/* friends / squad part */
+.friends{
+    flex-direction: column;
+}
+
+#friends_bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.friends_img{
+    padding: 10px;
+    height: 300px;
+    width: 200px;
+}
+
+/*  bottom title */
+#zefat{
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    background-color: #5f5b5b;
+    text-align: center;
+}
